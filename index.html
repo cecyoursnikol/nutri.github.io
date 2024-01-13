@@ -1,0 +1,597 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: "fira sans", sans-serif;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        ul {
+            display: flex;
+            list-style: none;
+            text-decoration: none;
+            background-color: bisque;
+            height: 70px;
+            gap: 35px;
+            color: black;
+
+        }
+
+        li a:hover {
+            color: orangered;
+        }
+
+        h1 {
+            font-size: 45px;
+        }
+
+        .container {
+            background-image: url("fruit.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 600px;
+            margin-bottom: 10px;
+            padding: 250px;
+
+        }
+
+        hr {
+            color: orangered;
+        }
+
+        .ab {
+            text-decoration: none;
+            color: orangered;
+            border-style: dashed;
+            border-radius: 30px;
+            color: rgb(12, 12, 12);
+            border-color: orangered;
+            height: 40px;
+            width: 150px;
+        }
+
+        .ab:hover {
+            background-color: orangered;
+            color: white;
+            height: 40px;
+            border-radius: 30px;
+            width: 150px;
+            transition: 1s;
+        }
+
+        .adjust {
+            width: 500px;
+        }
+
+        h3 {
+            font-size: 30px;
+            padding-left: 160px;
+            padding-top: 60px;
+        }
+
+        .ph {
+            width: 650px;
+            font-size: 17px;
+            padding-left: 160px;
+            color: rgb(103, 101, 101);
+        }
+
+        .main {
+            display: flex;
+
+        }
+
+        .le {
+            text-decoration: none;
+            color: orangered;
+
+            border-radius: 30px;
+            color: rgb(12, 12, 12);
+            border-color: orangered;
+            height: 40px;
+            width: 170px;
+            padding-left: 100px;
+            margin-left: 150px;
+            margin-top: 30px;
+            /* padding-right: 30px; */
+
+            padding: 3px 50px;
+            background-color: rgb(248, 102, 40);
+            border-style: dashed;
+        }
+
+        .le:hover {
+            background-color: rgb(255, 255, 255);
+            color: white;
+            height: 40px;
+            border-radius: 30px;
+            width: 170px;
+            padding: 3px 50px;
+            transition: 1s;
+
+        }
+
+        .mor {
+            text-decoration: none;
+            height: 15px;
+            width: 150px;
+            border-color: rgb(239, 95, 11);
+            border-style: dashed;
+            padding-left: 50px;
+            margin-left: 90px;
+            margin-top: 20px;
+            height: 40px;
+            padding: 3px 50px;
+            border-radius: 20px;
+            padding: 10px;
+        }
+
+        .mor a {
+            color: black;
+            text-decoration: none;
+        }
+
+        .mor:hover {
+            background-color: orangered;
+            transition: 1s;
+            padding: 3px 50px;
+            padding: 10px;
+        }
+
+        .ceh {
+            font-size: 50px;
+
+        }
+
+        .don {
+            padding-left: 470px;
+            font-size: 17px;
+            width: 700px;
+
+        }
+
+        span {
+            color: rgb(79, 75, 75);
+            font-size: 18px;
+        }
+
+        .fit {
+            padding-left: 100px;
+            padding-top: 20px;
+            font-size: 19px;
+        }
+
+        .lo {
+            padding-left: 150px;
+            font-size: 17px;
+            color: rgb(87, 84, 84);
+            padding: 5px;
+        }
+
+        .lor {
+            padding-left: 50px;
+            font-size: 17px;
+            color: rgb(87, 84, 84);
+        }
+
+        .lore {
+            padding-left: 50px;
+            font-size: 17px;
+            color: rgb(87, 84, 84);
+        }
+
+        .ad {
+            padding-left: 130px;
+            font-size: 17px;
+            color: rgb(87, 84, 84);
+        }
+
+        .adi {
+            padding-left: 130px;
+            font-size: 17px;
+            color: rgb(87, 84, 84);
+        }
+
+        .adip {
+            padding-left: 130px;
+            font-size: 17px;
+            color: rgb(87, 84, 84);
+        }
+
+        .box {
+            display: flex;
+            gap: 30px;
+        }
+
+        .fitness {
+            padding-left: 170px;
+
+        }
+
+        .nu {
+            font-size: 19px;
+            padding-top: 20px;
+            padding-left: 90px;
+
+        }
+
+        .li {
+            font-size: 19px;
+            padding-top: 20px;
+            padding-left: 120px;
+        }
+
+        .tra {
+            font-size: 29px;
+            padding-left: 150px;
+            padding-top: 100px;
+        }
+
+        .tranning {
+            display: flex;
+        }
+
+        .hr {
+            padding-left: 500px;
+            width: 50px;
+
+            margin-left: 0;
+            border-color: rgb(245, 119, 74);
+        }
+
+        .ca {
+            text-decoration: none;
+            border-style: none;
+            padding: 4px;
+            font-size: 15px;
+
+
+        }
+
+        .ca a {
+            color: black;
+            text-decoration: none;
+        }
+
+        .ca a:hover {
+            color: orangered;
+            font-size: 17px;
+
+
+        }
+
+        .op a {
+            text-decoration: none;
+            color: rgb(22, 22, 21);
+            border-bottom: dashed;
+        }
+
+        .op:hover a {
+            text-align: center;
+            color: rgb(245, 80, 3);
+        }
+
+        .smi {
+            background-image: url("wp6865841.jpg");
+
+            width: 100%;
+            background-size: cover;
+            height: 1000px;
+            padding-top: 70px;
+
+
+        }
+
+        .smi input {
+            height: 50px;
+            width: 450px;
+            border: 2px orangered dashed;
+            padding: 20px;
+            font-size: 17px;
+
+
+        }
+
+
+        .pri input {
+            text-align: center;
+        }
+
+        .he {
+
+            background-color: orangered;
+            height: 40px;
+            width: 200px;
+            box-shadow: 10px 10px 40px rgb(13, 13, 13);
+            color: white;
+
+
+        }
+
+        .ne {
+            font-size: 16px;
+            background-color: rgb(49, 45, 45);
+            color: aliceblue;
+            height: 40px;
+            padding-top: 18px;
+            width: 100%;
+            text-align: center;
+
+        }
+
+        .ki {
+            display: flex;
+            padding-left: 200px;
+            gap: 20px;
+
+        }
+
+        .rut {
+            width: 400px;
+
+        }
+
+        .op {
+            border-style: none;
+
+
+            padding: 7px 0;
+        }
+
+        .col {
+            color: gray;
+        }
+
+        .line {
+            margin-top: 4px;
+        }
+
+        .line1 {
+            margin-top: 6px;
+        }
+
+        .form {
+            margin-left: 590px;
+            margin-top: 70px;
+        }
+
+        li a {
+            color: rgb(15, 15, 15);
+
+
+        }
+
+        .line2 {
+            margin-left: 100px;
+        }
+
+        .line3 {
+            margin-left: 110px;
+        }
+
+        .line4 {
+            margin-left: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+
+        <nav>
+            <ul>
+                <li><img src="nlogo.jpg" alt="" height="50px" width="160px"
+                        style="padding-top: 10px; padding-left: 70px;"></li>
+                <li style="padding-left: 1000px; padding-top: 25px; font-size: 17px;  padding-left: 900px; "><a href="#"
+                        style="text-decoration: none; margin-left: 2px;">Home</a></li>
+                <li style="padding-top: 25px;"><a href="#dr"
+                        style="text-decoration: none; font-size: 17px; padding-top: 25px;"><pre>About Me</pre></a></li>
+                <li style="padding-top: 25px; font-size: 17px;"><a href="#pro" style="text-decoration: none;">Pro</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <p style="color: orangered; font-size: 21px;">HOW CAN I HELP YOU....</p>
+        <p style="font-size: 38px;">I’M ELENA MINC -</p>
+        <h1>YOUR PERSONAL NUTRITIONIST</h1><br>
+        <hr style="width: 30%; text-align: left; margin-left: 0; border-color: rgb(245, 119, 74); "><br>
+        <p style="font-size: 17px; color: rgb(80, 73, 73); letter-spacing: 0px;" class="adjust">Maecenas quis urna eget
+            elit tincidunt ultrices id at elit donec et mi vel diam convallis gravida at eget nunc pellentesque ut
+            gravida justo donec tristique neque id odio porttitor</p><br><br>
+        <button class="ab"><a href="#dr" style="color: rgb(17, 16, 16); text-decoration: none;">About
+                Me</a></button><br><br><br><br><br><br>
+        <div class="main" id="dr">
+            <img src="dr.jpg" alt="" height="400px"
+                style="border-radius: 100px; box-shadow: 10px 10px 30px rgb(233, 131, 103); "><br><br><br>
+
+            <div style="margin-right: 200px;">
+                <h3><b>Dr. Elena Minc</b></h3>
+                <p style="color: orangered; padding-left: 160px; font-size: 16px; ">CERTIFIED NUTRITIONIST & LIFESTYLE
+                    COACH</p><br>
+                <p class="ph">Phasellus malesuada tincidunt nisl et bibendum. Duis malesuada porta risus, quis placerat
+                    justo tincidunt vel. Aenean porta at justo id egestas. Donec eget euismod ante. Fusce sed accumsan
+                    elit. Curabitur id posuere libero, vel aliquet ipsum. Pellentesque habitant morbi tristique senectus
+                    et netus et malesuada fames ac turpis egestas.</p>
+                <button class="le"><a href="#" style="color: rgb(17, 16, 16); text-decoration: none; ">
+                        <pre>Learn more</pre>
+                    </a></button><br><br><br><br>
+            </div>
+        </div>
+    </div>
+
+
+    <center>
+        <p style="padding-top: 100px; color: orangered; font-size: 18px;" id="pro">LET ME CHANGE YOUR LIFE</p>
+    </center>
+
+    <center>
+        <h2 class="ceh"><b>NUTRITION PROGRAMS</b></h2>
+    </center>
+    <center>
+        <hr style="width: 30%; text-align: left; margin-left: 0; border-color: rgb(250, 73, 9); ">
+    </center><br>
+    <span>
+        <p class="don">Donec et mi vel diam convallis gravida at eget nunc pellentesque ut gravida justo </p>
+        <p class="ce" style="font-size: 17px; padding-left: 600px;">donec tristique neque id odio porttitor aliquet
+            </center>
+        </p><br><br><br>
+    </span>
+    <div class="box">
+
+        <div class="fitness">
+            <img src="fitness.jpg" alt="" height="250px">
+            <p class="fit">FITNESS TRAINING</p>
+            <p class="lo" style="padding-left: 30px;">Lorem ipsum dolor sit amet, consectetur</p>
+            <p class="ad" style="padding-left: 130px;">adipiscing elit.</p>
+            <button class="mor line2"><a href="">LEARN MORE</a></button>
+        </div>
+
+        <div class="nutri" id="pro">
+            <img src="nutri.jpg" alt="" height="250px">
+            <p class="nu">NUTRITION PROGRAMS</p>
+            <p class="lor" style="padding: 5px; padding-left: 40px;">Lorem ipsum dolor sit amet, consectetur</p>
+            <p class="adi" style="padding-left: 130px;">adipiscing elit.</p>
+            <button class="mor line3"><a href="">LEARN MORE</a></button>
+        </div>
+
+        <div class="life">
+            <img src="life.jpg" alt="" height="250px">
+            <p class="li">LIFE MOTIVATION</p>
+            <p class="lore" style="padding: 5px; padding-left: 50px;">Lorem ipsum dolor sit amet, consectetur </p>
+            <p class="adip" style="padding-left: 150px;">adipiscing elit.</p>
+            <center> <button class="mor line4"><a href="">LEARN MORE</a></button></center>
+
+
+        </div>
+
+    </div><br><br><br><br>
+
+
+
+
+    </div>
+    <br><br>
+
+    <center>
+        <p style="color: orangered; font-size: 17px;">HEALTHY TIPS & TRICKS</p>
+    </center>
+    <center><b>
+            <h8 style="font-size: 45px; width: 30px;">LATEST POSTS</h8>
+        </b></center>
+    <center>
+        <hr style="width: 30%; text-align: left; margin-left: 0; border-color: rgb(250, 73, 9); "><br>
+
+        <center>
+            <p style="font-size: 15px; color: rgb(98, 95, 95);">Donec et mi vel diam convallis gravida at eget nunc
+                pellentesque ut gravida justo
+            </p>
+        </center>
+        <center>
+            <p style="font-size: 15px; color: rgb(98, 95, 95);">donec tristique neque id odio porttitor aliquet</p>
+        </center>
+        <br><br>
+        <div class="ki">
+
+            <div class="ps">
+                <img src="book.jpg" alt="" height="250px"><br><br>
+                <center> <button class="ca"><a
+                            href="https://nutritionist.oceanwp.org/curabitur-sodales-ligula-in-libero/">Curabitur
+                            Sodales Ligula In
+                            Libero</a></button></center>
+                <center>
+                    <p class="rut col">Lorem ipsum dolor sit amet, consectetur
+                        adipiscing elit.</p>
+                </center>
+                <center>
+                    <p class="col">integer nec odio. praesent libero.</p>
+                </center>
+                <center>
+                    <p class="col"> Sed cursus...</p>
+                </center><br>
+                <center><button class="op"><a
+                            href="https://nutritionist.oceanwp.org/curabitur-sodales-ligula-in-libero/">LEARN
+                            MORE</a></button></center><br>
+
+            </div>
+
+            <div class="heart">
+                <img src="heart.jpg" alt="" height="250px">
+
+                <center><button class="ca line"><a
+                            href="https://nutritionist.oceanwp.org/curae-morbi-lacinia-molestie-dui/">Curabitur Sodales
+                            Ligula In
+                            Libero</a></button></center>
+                <center>
+                    <p class="col line">Lorem ipsum dolor sit amet, consectetur
+                        adipiscing elit.</p>
+                </center>
+                <center>
+                    <p class="col line">integer nec odio. praesent libero.</p>
+                </center>
+                <center>
+                    <p class="col line"> Sed cursus...</p>
+                </center><br>
+                <center><button class="op"><a
+                            href="https://nutritionist.oceanwp.org/curae-morbi-lacinia-molestie-dui/">LEARN
+                            MORE</a></button></center>
+
+            </div>
+            <br><br>
+            <div class="veg">
+                <img src="veg.jpg" alt="" height="250px">
+                <div class="line1">
+                    <center><button class="ca" style="padding-top: 15px;"><a
+                                href="https://nutritionist.oceanwp.org/dapibus-diam-sed-nisi-nulla-quis-sem/">Curabitur
+                                Sodales Ligula In
+                                Libero</a></button></center>
+                    <center>
+                        <p class="col">Lorem ipsum dolor sit amet, consectetur
+                            adipiscing elit.</p>
+                    </center>
+                    <center>
+                        <p class="col">integer nec odio. praesent libero.</p>
+                    </center>
+                    <center>
+                        <p class="col"> Sed cursus...</p>
+                    </center><br>
+                    <center><button class="op"><a
+                                href="https://nutritionist.oceanwp.org/dapibus-diam-sed-nisi-nulla-quis-sem/">LEARN
+                                MORE</a></button></center>
+                </div>
+
+            </div>
+
+        </div>
+        <div class="smi">
+            <div class="form">
+                <input type="text" placeholder="Your Name*" height="100px"><br><br>
+                <input type="text" placeholder="Your Email*"><br><br>
+                <input type="text" placeholder="Your Phone*"><br><br>
+                <input type="text" class="pri" placeholder="Message*"
+                    style="height: 150px; padding: 30px; padding-bottom: 150px; font-size: 17px;"><br><br>
+                <button class="he">SEND YOUR MESSAGE</button>
+            </div>
+
+        </div>
+
+        </div>
+        <div class="ne">
+            <p>
+                <center>© HEALTHY EATING & LIVING WITH OCEANWP.
+                    ALL RIGHTS RESERVED BY PRIYANSHI PATEL
+
+                </center>
+            </p>
+        </div>
+</body>
+
+</html>
